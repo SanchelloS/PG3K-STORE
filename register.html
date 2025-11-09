@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/register_style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <section class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__language">Язык: Русский</div>
+          <div class="header__actions">
+            <a href="index.html">На главную</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <form action="action_page.php">
+      <div class="container">
+        <h1>Регистрация</h1>
+        <p>Заполните эту форму чтобы создать аккаунт.</p>
+        <hr />
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Введите Email" name="email" required />
+
+        <label for="psw"><b>Пароль</b></label>
+        <input
+          type="password"
+          placeholder="Введите пароль"
+          name="psw"
+          required
+        />
+
+        <label for="psw-repeat"><b>Повторите пароль</b></label>
+        <input
+          type="password"
+          placeholder="Повторите пароль"
+          name="psw-repeat"
+          required
+        />
+        <hr />
+
+        <p>
+          Создавая аккаунт вы соглашаетесь с
+          <a href="info_terms.html">Пользовательским соглашением</a>.
+        </p>
+        <button type="submit" class="registerbtn">Создать аккаунт</button>
+      </div>
+
+      <div class="container">
+        <div class="signin">
+          <p>Уже есть аккаунт? <a href="login.html">Войти</a>.</p>
+        </div>
+      </div>
+    </form>
+    <section class="footer">
+      <div class="footer__info">
+        <div>© Copyright 2023 CSS HTML JS, All Rights Reserved</div>
+      </div>
+    </section>
+  </body>
+</html>

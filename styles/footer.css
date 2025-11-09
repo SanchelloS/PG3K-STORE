@@ -1,0 +1,27 @@
+.footer {
+  height: 60px;
+  background-color: var(--gray-color);
+  color: var(--lightblue-color);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__info {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+.vertical-line_footer {
+  color: var(--lightblue-color);
+}
+
+.footer__actions {
+  gap: 20px;
+  display: flex;
+}
+
+.footer__actions a {
+  position: relative;
+}

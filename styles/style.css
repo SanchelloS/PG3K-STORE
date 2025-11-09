@@ -1,0 +1,283 @@
+:root {
+  --primary-color: #40bcb0;
+  --green-color: #afcd86;
+  --second-primary-color: #329a93;
+
+  --gray-color: #415050;
+  --secondary-color: #656565;
+  --secondary-color-hover: #4f4f4f;
+
+  --lightblue-color: #8adcf0;
+
+  --white-color: #fafafa;
+  --white-color-hover: rgb(241, 241, 241);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100%;
+}
+
+/* NAVIGATION */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 40px 0;
+}
+
+.navigation__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navigation__icons {
+  display: flex;
+  gap: 2px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navigation__icons img:hover {
+  filter: saturate(3);
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.navigation__logo {
+  margin-right: 30px;
+  color: var(--secondary-color);
+  font-size: 30px;
+}
+
+.navigation__actions {
+  display: flex;
+  gap: 30px;
+  color: var(--secondary-color);
+}
+
+.navigation__actions a {
+  color: var(--secondary-color);
+}
+
+.navigation__actions a:hover {
+  color: var(--secondary-color-hover);
+}
+
+.navigation__bottom {
+  height: 48px;
+  background-color: var(--primary-color);
+}
+/* PROMOTION */
+
+.promotion {
+  display: flex;
+  background-color: var(--primary-color);
+  height: 470px;
+}
+
+.promotion__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  transform: translateX(-150%);
+  animation: ani 1s forwards;
+}
+
+@keyframes ani {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.promotion__text {
+  font-size: 40px;
+  color: var(--white-color);
+  background-color: rgba(0, 0, 0, 0.414);
+  padding: 15px 20px;
+  width: fit-content;
+}
+
+/* PRODUCTS */
+
+.products__wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: fit-content;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.product img {
+  transition: 200ms linear 50ms;
+}
+.product:hover {
+  -webkit-transform: rotateZ(3deg) scale(1.05);
+  -ms-transform: rotateZ(3deg) scale(1.05);
+  transform: rotateZ(3deg) scale(1.05);
+  cursor: pointer;
+}
+
+.products__all {
+  max-width: 800px;
+}
+
+.products__title {
+  font-size: 23px;
+  color: var(--secondary-color);
+  margin-bottom: 25px;
+  margin-top: 45px;
+}
+
+.product__image {
+  background-color: #eff1f0;
+  height: 230px;
+  width: 220px;
+}
+
+.product__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 15px 0;
+}
+
+.product__info img:hover {
+  filter: saturate(30);
+}
+
+.product__info_price {
+  font-size: 18px;
+  color: var(--green-color);
+}
+
+.banner {
+  flex-shrink: 0;
+  height: 485px;
+  width: 230px;
+  background-color: var(--white-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 8px 0px 24px 8px;
+  justify-content: center;
+  display: flex;
+  margin-top: 45px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.banner:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.banner__wrapper {
+  background-color: var(--white-color);
+  height: 445px;
+  width: 230px;
+  justify-content: center;
+  display: flex;
+}
+
+.banner__image img {
+  background-color: var(--primary-color);
+  height: 415px;
+  width: 200px;
+  margin-top: 15px;
+}
+
+.banner__text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: var(--gray-color);
+}
+
+/* DELIVERY */
+
+.delivery {
+  background-color: var(--primary-color);
+  height: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 23px;
+}
+
+.delivery__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.delivery-promo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.information {
+  height: 334px;
+  background-color: var(--second-primary-color);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: var(--white-color);
+}
+
+.information a {
+  color: var(--white-color);
+}
+
+.information a:hover {
+  color: var(--white-color-hover);
+}
+
+.information__wrapper {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.info__title__first,
+.info__title__second {
+  margin-bottom: 36px;
+}
+
+.info__indent {
+  margin-bottom: 10px;
+}

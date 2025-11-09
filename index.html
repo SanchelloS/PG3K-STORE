@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <title>PG3K STORE</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <section class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__language">Язык: Русский</div>
+          <div class="header__actions">
+            <a class="vertical-line" onclick="alert('Данный функционал временно неактивен')">Аккаунт</a>
+            <a class="vertical-line" href="login.html">Войти</a>
+            <a href="register.html">Регистрация</a> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+
+    <section class="container navigation">
+      <div class="navigation__wrapper">
+        <div class="navigation__logo">PG3K STORE</div>
+        <div class="navigation__actions">
+          <a href="index.html">ДОМОЙ</a>
+          <a onclick="alert('Данный функционал временно неактивен')">ПОПУЛЯРНОЕ</a>
+          <a onclick="alert('Данный функционал временно неактивен')">ДРУГОЕ</a>
+          <a onclick="alert('Данный функционал временно неактивен')">ПОКУПКА</a>
+        </div>
+      </div>
+
+      <div class="navigation__info">
+        <div class="navigation__info_search">
+          <input type="text" placeholder="Поиск..." />
+        </div>
+        <div class="navigation__icons">
+          <div class="navigation__info_discount">
+            <a href="promo.html"><img src="img/icon_promo.png" alt="" /></a>
+          </div>
+          <div class="navigation__info_basket">
+            <a href="cart.html"><img src="img/icon_cart.png" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="navigation__basket"></div>
+      </div>
+    </section>
+
+    <!-- PROMOTION -->
+    <section class="promotion">
+      <div class="container">
+        <div class="promotion__wrapper">
+          <span class="promotion__text">ПОКУПАЙ КАЧЕСТВО</span>
+          <span class="promotion__text">ЗА ДЁШЕВО</span>
+        </div>
+      </div>
+    </section>
+    ;
+    <!-- PRODUCTS -->
+    <section class="container products__wrapper">
+      <div class="products__all">
+        <div class="products__recommend">
+          <div class="products__title">РЕКОМЕНДУЕМЫЕ ПРОДУКТЫ</div>
+          <div class="products">
+  
+          </div>
+        </div>
+
+        <div class="products__favorites">
+          <div class="products__title">ИЗБРАННОЕ</div>
+          <div class="products">
+    
+          </div>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="banner__wrapper">
+          <div class="banner__image">
+            <img src="img/banner.png" alt="" />
+            <div class="banner__text">ПРОСМОТР</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery">
+      <div class="delivery__wrapper">
+        <div class="delivery-promo">
+          <img src="img/icon_car.png" alt="" />
+          <h3>БЕСПЛАТНАЯ ДОСТАВКА ОТ 100 РУБЛЕЙ</h3>
+        </div>
+        <div class="delivery-promo">
+          <img src="img/icon_phone.png" alt="" />
+          <h3>+375 (29) 777-77-77</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="information">
+      <div class="information__wrapper">
+        <div class="information__info">
+          <div class="info__title__first">
+            <h3>ИНФОРМАЦИЯ</h3>
+          </div>
+          <div class="information__info__info">
+            <div class="info__indent">
+              <a href="info_about.html">> О нас</a><br />
+            </div>
+            <div class="info__indent">
+              <a href="info_delivery.html">> Доставка и возврат</a> <br />
+            </div>
+            <div class="info__indent">
+              <a href="info_terms.html">> Пользовательское соглашение</a><br />
+            </div>
+          </div>
+        </div>
+        <div class="information__contacts">
+          <div class="info__title__second">
+            <h3>КОНТАКТЫ</h3>
+          </div>
+          <div class="information__contacts__info">
+            <div class="info__indent">> Полоцкий Государственный экономический колледж <br /></div>
+            <div class="info__indent">> Адрес: ул. Октябрьская 55, Полоцк, Витебская область<br /></div>
+            <div class="info__indent">> +375 29 777 77 77 <br /></div>
+            <div class="info__indent">> mail@email.com<br /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer__info">
+        <div>© Copyright 2023 CSS HTML JS, All Rights Reserved</div>
+    
+      </div>
+    </section>
+  </body>
+
+  <script src="/scripts/shared.js"></script>
+  <script src="/scripts/database.js"></script>
+  <script src="/scripts/script.js"></script>
+</html>

@@ -1,0 +1,30 @@
+/* HEADER */
+
+.header {
+    background-color: var(--primary-color);
+  }
+  
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+  }
+  
+  .header__language {
+    color: var(--white-color);
+  }
+  
+  .header__actions {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .header__actions a {
+    position: relative;
+    color: var(--white-color);
+  }
+  
+  .header__actions a:hover {
+    color: var(--white-color-hover);
+  }
+  
